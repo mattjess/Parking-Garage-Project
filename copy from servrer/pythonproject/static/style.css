@@ -1,0 +1,14 @@
+body {
+	font-family: 'Fira Mono', monospace;
+	background-repeat: no-repeat; 
+}
+
+img {
+	width:auto;
+	max-width:20%;
+	height:auto;
+}
+
+.navigation {
+	text-align: center;
+}

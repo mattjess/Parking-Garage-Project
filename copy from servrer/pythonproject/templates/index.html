@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ParkingPro - Parking Assistant</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='style.css')}}" />
+	<link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet">
+	<style>body { background-image: url("{{ url_for('static', filename='Indyblur.png')}}"); }</style>
+	<script src="main.js"></script>
+</head>
+<body>
+	<div class="navigation">
+		<h1>Parking Pro</h1>
+		<h4>Updated every 30 seconds</h4>
+	</div>
+	<div class="instructions">
+		<p></p>
+	</div>
+	<div class="lots">
+		<div class="lot" title="Barnhill">
+			<img src="{{ url_for('static', filename='Barnhill.jpg')}}">
+			<h3>Barnhill</h3>
+			<p>{{ barnhill }} available spots out of 1300</p>
+		</div>
+		<div class="lot" title="Blackford">
+			<img src="{{ url_for('static', filename='Blackford.jpg')}}">
+			<h3>Blackford</h3>
+			<p>{{ blackford }} available spots out of 1146</p>
+		</div>
+		<div class="lot" title="Gateway">
+			<img src="{{ url_for('static', filename='Gateway.jpg')}}">
+			<h3>Gateway</h3>
+			<p>{{ gateway }} available spots out of 1300</p>
+		</div>
+		<div class="lot" title="Riverwalk">
+			<img src="{{ url_for('static', filename='Riverwalk.jpg')}}">
+			<h3>Riverwalk</h3>
+			<p>{{ riverwalk }} available spots out of 1350</p>
+		</div>
+		<div class="lot" title="Sports Garage">
+			<img src="{{ url_for('static', filename='Sportsgarage.jpg')}}">
+			<h3>Sports Garage</h3>
+			<p>{{ sports_garage }} available spots out of 2888</p>
+		</div>
+	</div>
+</body>
+</html>
+
+<!-- <html>
+
+<head>
+	<title>ParkingPro - Parking Assistant</title>
+	<link rel="stylesheet" href="CSSfile.css">
+</head>
+
+<div ALIGN=CENTER>
+	<h1 ALIGN=CENTER style="font-family:impact; font-size: 55">Parking Pro</h1>
+	<img src="car_Logo.png" alt="Car Logo" width="319" height="139">
+</div>
+
+<div>
+	<img src="Barnhill.jpg" alt="Barnhill" id="img" ALIGN=LEFT>
+
+</div>
+
+<div>
+	<img src="Gateway.jpg" alt="Gateway" id="img" ALIGN=LEFT>
+
+</div>
+
+<div>
+	<img src="Blackford.jpg" alt="Blackford" id="img" ALIGN=RIGHT>
+</div>
+<img src="Blackford.jpg" alt="Blackford" id="img" ALIGN=RIGHT>
+<div>
+
+</div>
+
+</html> -->
