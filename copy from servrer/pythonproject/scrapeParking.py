@@ -1,5 +1,3 @@
-# Copyright 2018
-
 import bs4
 import requests
 import requests_cache
